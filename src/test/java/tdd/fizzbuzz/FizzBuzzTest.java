@@ -35,4 +35,12 @@ public class FizzBuzzTest {
         String actual = fizzBuzz.countOff(input);
         assertEquals("Whizz", actual);
     }
+
+    @Test
+    public void should_fizz_buzz_when_count_off_given_multiple_of_three_and_five() throws Exception {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        int input = 15;
+        String actual = fizzBuzz.countOff(input);
+        assertEquals("FizzBuzz", actual);
+    }
 }
