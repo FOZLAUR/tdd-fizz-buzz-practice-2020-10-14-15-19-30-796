@@ -9,6 +9,9 @@ public class FizzBuzz {
     final private static int MOD7 = 7;
 
     public String countOff(int input){
+        if(input % MOD3 == 0 && input % MOD5 == 0){
+            return "FizzBuzz";
+        }
         if(input % MOD3 == 0){
             return FIZZ;
         }
