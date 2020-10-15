@@ -1,5 +1,8 @@
 package tdd.fizzbuzz;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class FizzBuzz {
     final private static String FIZZ = "Fizz";
     final private static String BUZZ = "Buzz";
@@ -9,27 +12,16 @@ public class FizzBuzz {
     final private static int MOD7 = 7;
 
     public String countOff(int input){
-        if(input % MOD3 == 0 && input % MOD5 == 0 && input % MOD7 == 0){
-            return FIZZ+BUZZ+WHIZZ;
-        }
-        if(input % MOD3 == 0 && input % MOD5 == 0){
-            return (FIZZ.concat(BUZZ));
-        }
-        if(input % MOD3 == 0 && input % MOD7 == 0){
-            return (FIZZ.concat(WHIZZ));
-        }
-        if(input % MOD5 == 0 && input % MOD7 == 0){
-            return (BUZZ.concat(WHIZZ));
-        }
+        List<String> output = new ArrayList<String>();
         if(input % MOD3 == 0){
-            return FIZZ;
+            output.add(FIZZ);
         }
         if(input % MOD5 == 0){
-            return BUZZ;
+            output.add(BUZZ);
         }
         if(input % MOD7 == 0){
-            return WHIZZ;
+            output.add(WHIZZ);
         }
-        return String.valueOf(input);
+        return output.size() == 0 ? String.valueOf(input) : output.stream().reduce("", String::concat);
     }
 }
