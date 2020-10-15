@@ -13,6 +13,9 @@ public class FizzBuzz {
         if(input % MOD3 == 0 && input % MOD5 == 0){
             return FIZZBUZZ;
         }
+        if(input % MOD3 == 0 && input % MOD7 == 0){
+            return "FizzWhizz";
+        }
         if(input % MOD3 == 0){
             return FIZZ;
         }
