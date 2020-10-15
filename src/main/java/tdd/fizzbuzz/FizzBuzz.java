@@ -13,6 +13,9 @@ public class FizzBuzz {
         if(input % MOD5 == 0){
             return BUZZ;
         }
+        if(input % 7 == 0){
+            return "Whizz";
+        }
         return String.valueOf(input);
     }
 }
