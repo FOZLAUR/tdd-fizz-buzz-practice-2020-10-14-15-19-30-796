@@ -14,7 +14,7 @@ public class FizzBuzz {
             return FIZZBUZZ;
         }
         if(input % MOD3 == 0 && input % MOD7 == 0){
-            return "FizzWhizz";
+            return (FIZZ.concat(WHIZZ));
         }
         if(input % MOD3 == 0){
             return FIZZ;
