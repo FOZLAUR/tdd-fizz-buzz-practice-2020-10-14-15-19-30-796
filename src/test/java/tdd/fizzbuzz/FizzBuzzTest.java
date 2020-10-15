@@ -55,7 +55,7 @@ public class FizzBuzzTest {
     @Test
     public void should_buzz_whizz_when_count_off_given_multiple_of_five_and_seven() throws Exception {
         FizzBuzz fizzBuzz = new FizzBuzz();
-        int input = 21;
+        int input = 35;
         String actual = fizzBuzz.countOff(input);
         assertEquals("BuzzWhizz", actual);
     }

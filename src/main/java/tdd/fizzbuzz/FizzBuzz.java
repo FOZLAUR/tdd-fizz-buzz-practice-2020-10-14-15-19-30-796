@@ -16,6 +16,9 @@ public class FizzBuzz {
         if(input % MOD3 == 0 && input % MOD7 == 0){
             return (FIZZ.concat(WHIZZ));
         }
+        if(input % MOD5 == 0 && input % MOD7 == 0){
+            return (BUZZ.concat(WHIZZ));
+        }
         if(input % MOD3 == 0){
             return FIZZ;
         }
