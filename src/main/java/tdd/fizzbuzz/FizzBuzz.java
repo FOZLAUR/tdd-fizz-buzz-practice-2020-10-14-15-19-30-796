@@ -4,7 +4,6 @@ public class FizzBuzz {
     final private static String FIZZ = "Fizz";
     final private static String BUZZ = "Buzz";
     final private static String WHIZZ = "Whizz";
-    final private static String FIZZBUZZ = "FizzBuzz";
     final private static int MOD3 = 3;
     final private static int MOD5 = 5;
     final private static int MOD7 = 7;
@@ -14,7 +13,7 @@ public class FizzBuzz {
             return FIZZ+BUZZ+WHIZZ;
         }
         if(input % MOD3 == 0 && input % MOD5 == 0){
-            return FIZZBUZZ;
+            return (FIZZ.concat(BUZZ));
         }
         if(input % MOD3 == 0 && input % MOD7 == 0){
             return (FIZZ.concat(WHIZZ));
